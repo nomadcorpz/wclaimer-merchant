@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:tag="ProductWarrantyFormFragment"
+    tools:context=".FragmentScreensComponents.ProductWarrantyFormFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <LinearLayout
+            android:id="@+id/CW_delete_warranty_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Date added "
+                android:textColor="@color/colorFontGrey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/CW_date_added_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Date added"
+                android:textColor="@color/colorFontGrey"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/CW_delete_warranty_IB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delete_product_up_btn"
+                android:text="Save"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Serial No: "
+                android:textColor="@color/colorFontGrey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/CW_product_serial_no_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+                <EditText
+                    android:id="@+id/CW_product_serial_no_ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Product Serial No"
+                    android:inputType="text"
+
+                    android:paddingStart="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorFontGrey"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/scan_btn1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_scan" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Model No: "
+                android:textColor="@color/colorFontGrey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/CW_product_model_no_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+                <EditText
+                    android:id="@+id/CW_product_model_no_ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Product Model No"
+                    android:inputType="text"
+
+                    android:paddingStart="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorFontGrey"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/scan_btn2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_scan" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Model Name: "
+                android:textColor="@color/colorFontGrey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/CW_product_model_name_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+                <EditText
+                    android:id="@+id/CW_product_model_name_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Product Model Name"
+                    android:inputType="text"
+
+                    android:paddingStart="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorFontGrey"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Warranty Period : (months) "
+                android:textColor="@color/colorFontGrey"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/CW_no_of_months_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp">
+
+                <EditText
+                    android:id="@+id/CW_no_of_months_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Number of Months"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingStart="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorFontGrey"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/product_update_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorSmokeWhite"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/CW_prod_Remark_ET"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorSmokeWhite"
+                        android:hint="Remarks...."
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:minLines="7"
+                        android:paddingStart="10dp"
+
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorFontGrey"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/scan_btn3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_scan" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFontGrey"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/CW_warrantyConditionET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorSmokeWhite"
+                        android:hint="Terms and conditions...."
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:minLines="7"
+                        android:paddingHorizontal="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorFontGrey"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/CW_create_warranty_IB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/create_warranty_up_btn"
+                android:text="Save"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
